@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
+
+:root {
+    --background-color: #dce6dc;
+    --button-primary-color: #e1cfff;
+    --button-secondary-color: #e3fef8;
+    --button-danger-color: #ff8d8d;
+    --primary-color: tomato;
+    --secondary-color: #00d059;
+    --tertiary-color: #5e6aff;
+    --text-primary-color: #000;
+    --text-secondary-color: #b21d73
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    src: local("Merriweather Black"), url(fonts/Merriweather-Black.ttf) format("truetype")
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 900;
+    src: local("Merriweather Black Italic"), url(fonts/Merriweather-BlackItalic.ttf) format("truetype")
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Merriweather Bold"), url(fonts/Merriweather-Bold.ttf) format("truetype")
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 700;
+    src: local("Merriweather Bold Italic"), url(fonts/Merriweather-BoldItalic.ttf) format("truetype")
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Merriweather Italic"), url(fonts/Merriweather-Italic.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Merriweather Light"), url(fonts/Merriweather-Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Merriweather;
+    font-style: italic;
+    font-weight: 300;
+    src: local("Merriweather Light Italic"), url(fonts/Merriweather-LightItalic.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Merriweather Regular"), url(fonts/Merriweather-Regular.ttf) format("truetype")
+}
+
+body {
+}
+
+body {
+    font-family: Merriweather, serif;
+    background: var(--background-color);
+}
+
+.code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+button {
+    align-items: center;
+    background-color: var(--button-primary-color);
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--text-primary-color);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    margin: 5px 10px;
+    max-width: 100%;
+    min-width: 150px;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto
+}
+
+button.secondary {
+    background-color: var(--button-secondary-color)
+}
+
+button.danger {
+    background-color: var(--button-danger-color)
+}
+
+button.icon {
+    min-width: auto;
+    padding: 20px
+}
+
+button:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    width: 100%;
+    z-index: -1
+}
+
+button:hover:after {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+}
+
+button:active {
+    background-color: var(--tertiary-color);
+    outline: 0
+}
+
+button:hover {
+    outline: 0
+}
+
+.container {
+    margin: auto;
+    width: 90%
+}
+
+hr {
+    background: #000;
+    border: 0;
+    height: 5px;
+    margin: 50px 0
+}
+
+footer {
+    color: var(--text-primary-color);
+    text-align: center
+}
+
+@media (min-width: 1000px) {
+    .button {
+        padding: 0 40px
+    }
+
+    .container {
+        padding: 20px
+    }
 }
