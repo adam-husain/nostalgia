@@ -22,10 +22,7 @@ function Section({children, reverse}) {
 
 		observer.observe(sectionRef.current);
 
-		// Cleanup the observer when component unmounts
-		return () => {
-			observer.unobserve(sectionRef.current);
-		};
+
 	}, []);
 
 	return (
