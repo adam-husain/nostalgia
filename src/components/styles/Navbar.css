@@ -1,19 +1,19 @@
 
 .navbar {
     background: var(--primary-color);
-    bottom: 30%;
+    top: 600px;
     box-shadow: 10px 10px;
     left: 50%;
     padding: 10px;
     position: absolute;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 90%;
     z-index: 10
 }
 
 .navbar.sticky {
-    bottom: 87%;
+    top: 70px;
+    bottom: auto;
     position: fixed
 }
 
@@ -24,11 +24,21 @@
     padding: 0
 }
 
+
+.hamburger {
+    border: none;
+    font-size: 1.5em
+}
+
+.menu img {
+    height: 50px;
+    width: auto
+}
+
 @media (max-width: 1000px) {
     .navbar {
         margin: 20px;
         position: static;
-        -webkit-transform: translate(0);
         transform: translate(0);
         width: auto
     }
@@ -41,37 +51,12 @@
         transition: max-height .5s cubic-bezier(.22, 1, .36, 1)
     }
 
+    .menu-open {
+        max-height: 300px;
+        transition: max-height .5s cubic-bezier(.22, 1, .36, 1)
+    }
+
     .menu button {
         min-height: 50px
     }
-}
-
-.menu-open {
-    max-height: 300px;
-    transition: max-height .5s cubic-bezier(.22, 1, .36, 1)
-}
-
-.hamburger {
-    border: none;
-    font-size: 1.5em
-}
-
-.menu img {
-    height: 50px;
-    width: auto
-}
-
-.fade-in-section {
-    opacity: 0;
-    -webkit-transform: scale(.9);
-    transform: scale(.9);
-    transition: opacity .5s ease-out, -webkit-transform .5s ease-out;
-    transition: opacity .5s ease-out, transform .5s ease-out;
-    transition: opacity .5s ease-out, transform .5s ease-out, -webkit-transform .5s ease-out
-}
-
-.is-visible {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none
 }

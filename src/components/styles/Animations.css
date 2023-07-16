@@ -44,52 +44,14 @@ header .title span:nth-child(9) {
     animation-delay: 1.9s
 }
 
-@-webkit-keyframes title-intro {
-    0% {
-        opacity: 0;
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-        -webkit-transform: translateY(10px);
-        transform: translateY(10px)
-    }
-    5% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    45% {
-        opacity: 0
-    }
-    50% {
-        opacity: 0
-    }
-    60% {
-        opacity: 1
-    }
-    80% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
-    }
-    85% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 5px 0 #000
-    }
-    95% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 5px 0 #000
-    }
-    to {
-        opacity: 1;
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
-    }
-}
-
 @keyframes title-intro {
     0% {
         opacity: 0;
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-        -webkit-transform: translateY(10px);
         transform: translateY(10px)
     }
     5% {
         opacity: 1;
-        -webkit-transform: translateY(0);
         transform: translateY(0)
     }
     45% {
@@ -112,24 +74,6 @@ header .title span:nth-child(9) {
     }
     to {
         opacity: 1;
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
-    }
-}
-
-@-webkit-keyframes title-loop {
-    0% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
-    }
-    5% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 5px 0 #000
-    }
-    10% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 5px 0 #000
-    }
-    15% {
-        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
-    }
-    to {
         text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
     }
 }

@@ -1,68 +1,43 @@
-
-.part-1 {
-    height: 55vh
-}
-
-.part-2 {
+section {
     align-items: center;
     display: flex;
-    margin: 100px 5%
+    margin: 50px;
+}
+
+section.reverse {
+    flex-direction: row-reverse;
 }
 
 header {
-    color: var(--text-primary-color);
-    font-size: 48px
-}
-
-.part-1 header {
-    left: 10%;
-    position: absolute;
-    top: 15%
-}
-
-.part-2 header {
+    margin: 20px auto;
+    font-size: 48px;
     color: var(--text-secondary-color);
-    display: inline-block;
-    font-size: 40px;
     font-weight: 700;
     letter-spacing: 3px;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
 }
 
-.part-1 img {
-    box-shadow: 10px 10px;
-    height: 30%;
-    position: absolute;
-    right: 10%;
-    top: 15%;
-    width: auto
+header .subtitle {
+    font-size: 40px;
+    color: var(--text-primary-color);
+    text-shadow: none;
 }
 
-.part-2 img {
+
+section img {
     box-shadow: 10px 10px;
     height: auto;
     width: 40%
 }
 
-main {
+section main {
+    padding: 50px 150px 50px;
     color: var(--text-primary-color);
     font-size: 18px;
     font-weight: 700
 }
 
-.part-1 main {
-    left: 10%;
-    position: absolute;
-    top: 35%;
-    width: 40%
-}
-
-.part-2 main {
-    padding: 50px 0 50px 100px
-}
-
 header .title span {
-    -webkit-animation: title-intro 5s ease forwards, title-loop 3s ease infinite;
     animation: title-intro 5s ease forwards, title-loop 3s ease infinite;
     color: var(--text-secondary-color);
     display: inline-block;
@@ -72,45 +47,45 @@ header .title span {
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 5px 5px 0 #000
 }
 
+
+.fade-in-section {
+    opacity: 0;
+    transform: scale(.9);
+    transition: opacity .5s ease-out, transform .5s ease-out
+}
+
+.is-visible {
+    opacity: 1;
+    transform: none
+}
+
 @media (max-width: 1000px) {
+    header {
+        text-align: center;
+        font-size: 40px;
+        margin: 50px auto 20px;
+    }
+
     header .title span {
         font-size: 40px;
-        padding: 2px
+        padding: 1px
     }
 
-    .part-1 header {
-        font-size: 40px;
-        position: static;
-        text-align: center
+    header .subtitle {
+        font-size: 38px;
+        letter-spacing: 2px;
     }
 
-    .part-1 {
-        height: auto
+    section {
+        display: block;
+        margin: 50px auto;
     }
 
-    .part-1 main {
-        margin: 20px auto;
-        position: static;
-        text-align: center;
-        width: 80%
-    }
-
-    .part-1 img {
-        height: auto;
-        margin: 20px auto;
-        position: inherit;
+    section img {
         width: 100%
     }
 
-    .part-2 {
-        display: block
-    }
-
-    .part-2 img {
-        width: 100%
-    }
-
-    .part-2 main {
+    section main {
         padding: 10px;
         text-align: center
     }

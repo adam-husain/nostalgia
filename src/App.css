@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap);
 
 :root {
-    --background-color: #dce6dc;
-    --button-primary-color: #e1cfff;
-    --button-secondary-color: #e3fef8;
+    --background-color: #e5dce6;
+    --button-primary-color: #ffd6ff /*#e1cfff*/;
+    --button-secondary-color: #c4efff;
     --button-danger-color: #ff8d8d;
-    --primary-color: tomato;
+    --primary-color: #cdb4db /*#ff6347*/;
     --secondary-color: #00d059;
-    --tertiary-color: #5e6aff;
+    --tertiary-color: #B9A3C9;
     --text-primary-color: #000;
     --text-secondary-color: #b21d73
 }
@@ -89,6 +89,7 @@ button {
     color: var(--text-primary-color);
     cursor: pointer;
     display: flex;
+    font-family: Merriweather, serif;
     font-size: 16px;
     font-weight: 700;
     height: 48px;
@@ -103,7 +104,6 @@ button {
     text-decoration: none;
     touch-action: manipulation;
     user-select: none;
-    -webkit-user-select: none;
     width: auto
 }
 
@@ -137,7 +137,6 @@ button:after {
 }
 
 button:hover:after {
-    -webkit-transform: translate(0);
     transform: translate(0)
 }
 
@@ -159,12 +158,13 @@ hr {
     background: #000;
     border: 0;
     height: 5px;
-    margin: 50px 0
+    margin: 100px auto;
 }
 
 footer {
     color: var(--text-primary-color);
-    text-align: center
+    text-align: center;
+    margin: 100px auto auto;
 }
 
 @media (min-width: 1000px) {
