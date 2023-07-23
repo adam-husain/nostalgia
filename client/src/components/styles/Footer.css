@@ -1,0 +1,26 @@
+footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+    margin: 30px auto;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    footer .links {
+        flex-direction: column;
+    }
+}

@@ -13,7 +13,7 @@ function Navbar() {
 	const navigate = useNavigate();
 
 	const goToShop = () => {
-		navigate('/product');
+		navigate('/shop');
 	};
 
 	useEffect(() => {
@@ -48,9 +48,9 @@ function Navbar() {
 					}
 					<div className={menuOpen ? "menu menu-open" : "menu"}>
 						<img src={logo} alt="Logo"/>
-						<button>Home</button>
 						<button onClick={goToShop}>Shop</button>
 						<button>Seller</button>
+						<button>Blog</button>
 						<button>Contact</button>
 					</div>
 				</div>

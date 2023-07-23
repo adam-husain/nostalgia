@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": "001",
+      "name": "Product 1",
+      "description": "This is an amazing product 1",
+      "price": 50,
+      "category": "Electronics",
+      "inStock": true
+    },
+    {
+      "id": "002",
+      "name": "Product 2",
+      "description": "This is a fantastic product 2",
+      "price": 100,
+      "category": "Electronics",
+      "inStock": false
+    },
+    {
+      "id": "003",
+      "name": "Product 3",
+      "description": "This is a wonderful product 3",
+      "price": 150,
+      "category": "Kitchen",
+      "inStock": true
+    },
+    {
+      "id": "004",
+      "name": "Product 4",
+      "description": "This is an awesome product 4",
+      "price": 200,
+      "category": "Home Decor",
+      "inStock": true
+    },
+    {
+      "id": "005",
+      "name": "Product 5",
+      "description": "This is an excellent product 5",
+      "price": 250,
+      "category": "Home Decor",
+      "inStock": false
+    },
+    {
+      "id": "006",
+      "name": "Product 6",
+      "description": "This is an extraordinary product 6",
+      "price": 300,
+      "category": "Books",
+      "inStock": true
+    },
+    {
+      "id": "007",
+      "name": "Product 7",
+      "description": "This is a remarkable product 7",
+      "price": 350,
+      "category": "Electronics",
+      "inStock": false
+    },
+    {
+      "id": "008",
+      "name": "Product 8",
+      "description": "This is an outstanding product 8",
+      "price": 400,
+      "category": "Kitchen",
+      "inStock": true
+    },
+    {
+      "id": "009",
+      "name": "Product 9",
+      "description": "This is a stunning product 9",
+      "price": 450,
+      "category": "Home Decor",
+      "inStock": true
+    },
+    {
+      "id": "010",
+      "name": "Product 10",
+      "description": "This is a splendid product 10",
+      "price": 500,
+      "category": "Books",
+      "inStock": false
+    },
+    {
+      "id": "011",
+      "name": "Product 11",
+      "description": "This is an impressive product 11",
+      "price": 550,
+      "category": "Electronics",
+      "inStock": true
+    },
+    {
+      "id": "012",
+      "name": "Product 12",
+      "description": "This is a superb product 12",
+      "price": 600,
+      "category": "Kitchen",
+      "inStock": false
+    },
+    {
+      "id": "013",
+      "name": "Product 13",
+      "description": "This is a top-notch product 13",
+      "price": 650,
+      "category": "Home Decor",
+      "inStock": true
+    },
+    {
+      "id": "014",
+      "name": "Product 14",
+      "description": "This is a magnificent product 14",
+      "price": 700,
+      "category": "Books",
+      "inStock": true
+    },
+    {
+      "id": "015",
+      "name": "Product 15",
+      "description": "This is a splendid product 15",
+      "price": 750,
+      "category": "Electronics",
+      "inStock": false
+    }
+  ]
+}

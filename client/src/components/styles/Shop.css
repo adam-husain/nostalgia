@@ -1,0 +1,23 @@
+section {
+    justify-content: space-between;
+}
+
+.categories {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        text-align: center;
+        font-size: 40px;
+        margin: auto;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
